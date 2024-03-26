@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* tipografía */
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(../fonts/PlayfairDisplay-Black.ttf);   
+  font-weight: black;
+  font-size: 900;
+  }
+
+  @font-face {
+    font-family: OpenSans;  
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: normal;
+    font-size: 400;
+    }
+  
+    @font-face {
+      font-family: OpenSans;  
+      src: url(../fonts/OpenSans-Light.ttf);
+      font-weight: lighter;
+      font-size: 300;
+      }
+
+/* header */
+header  {
+  margin: 0   8px;
+  padding: 10px 20px;
+  background-color:#2B2233;
+  text-align: center;   
+  color: #D2D964;
+  border-radius: 0 0 8px 8px;
+ }
+
+/* títulos */
+h1, h2 {
+  font-family: PlayfairDisplay, sans-serif;
+  color: #58594B;
+  text-align: center;
+ }
+ 
+ h3 {
+   font-family: OpeSans;
+   font-weight:lighter;
+   font-size: smaller;
+   }
+ 
+ /* parrafos index*/
+ p {
+  font-family: OpenSans, sans-serif;
+  margin: 4px;
+ }
+
+ /*nav*/
+ nav ul li {
+margin: 0 8px;
+list-style: none;
+display: inline-block; 
+}
+
+/* a */
+a {
+  font-family: OpenSans;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight:900;
+  font-size: medium;
+  color: #58594B;
+}
+
+/* articles Index
+.articleindex1 {  
+  margin: 10px auto;
+  padding: 20px;*
+.sectionindex1{
+  margin:   8px;
+  padding: 10px;
+  background-color:#776984;
+  opacity: 85%;
+  border-radius: 3px;
+}
+
+.sectionindex2{
+ margin: 0 0 0 8px;
+ padding: 10px; 
+background-color: #776984;
+}*/
+
+/*INDEX*/
+#contenedorindex {
+display: flex;
+flex-direction: row;
+flex-wrap:nowrap;
+height: 600px;
+width: 800px; 
+}
+
+.hijo {
+width: 400px;
+height: 400px;
+border: 3px solid black;
+}
+
+.hijo1 {
+margin: 10px 0 0 10px;
+ padding: 15px; 
+ background-color: #776984; 
+}
+
+.hijo2 {
+margin: 8px;
+padding: 10px;
+}
+
+.textohijo1 {
+  margin: 8px;
+  padding: 8px;
+}
+
+/*DECO*/
+.navdeco {
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+ padding: 20px 20px;
+}
+
+.divdeco {
+margin: 8px;
+padding: 8px;  
+text-align: start;
+}
+
+#contenedordeco {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.deco {
+  margin: 10px;
+  padding:20px;
+  width: 300px;
+  height: 400px;
+ background-color:#776984;
+ border-radius: 3px;
+}
+
+.deco1 { 
+color:aliceblue;
+text-align:center;
+}
+
+.deco2 { 
+  color:aliceblue;
+  text-align:center;
+  }
+ 
+  .deco3 { 
+    color:aliceblue;
+    text-align:center;
+    }  
+    .deco4 { 
+      color:aliceblue;
+      text-align:center;
+      } 
+      .deco5 { 
+        color:aliceblue;
+        text-align:center;
+        }
+    
+/*NOSOTROS*/
+/*article1*/
+.articlenosotros1 {
+  margin: 8px;
+  padding: 10px;
+  /*display: block*/;
+}
+
+/*iframe*/
+iframe {
+  margin: auto;
+  padding: 8px;
+  display: block;
+}
+
+/*formulario*/
+.formulario {
+  margin: 20px;
+  padding: 8px;
+  border: 2px solid #776984;
+  border-radius: 6px;
+  width: 50%;
+  font-size: small;
+}
+
+form {
+  margin: 10px 10px 10px;
+  padding: 8px;
+}
+label {  
+  display: block;
+  }
+
+input {
+margin: auto;
+padding: 6px;  
+background-color: #776984;  
+border: none;
+border-radius: 6px;
+font-family: OpenSans;
+color:#2B2233;
+cursor: pointer;
+}
+
+/*footer*/
+.grid-container{
+  display: grid;
+  width: 800px;
+  height: 400px;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgb(119,105 ,132);
+ /* font-family: OpenSans;
+ text-align: center;
+ border-radius: 8px;*/
+grid-template-columns: repeat( 2, 1fr);
+grid-template-rows:repeat(4, 1fr);
+grid-template-areas: ;
+}
+
+.footer-1 {
+background-color: #2B2233;  
+
+}
+.footer-2 {
+  background-color: #D2D964;
+  
+}
+.footer-3 {
+background-color: #58594B;  
+}
+.footer-4 {
+  
+}
+/*Responsive*/
+
+/*INDEX*/
+
+@media (max-width:1023px) {
+  .header {
+height: auto;
+  }
+
+  #contenedorindex {
+height: auto;
+flex-direction:row;
+flex-wrap: wrap ;
+text-align: center;    
+  }
+
+. nav ul li{
+  height: auto;
+  flex-direction:column;
+  flex-wrap:wrap;
+}
+
+/*DECO*/
+.navdeco {
+height: auto;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+.divdeco {
+  height: auto;
+text-align: justify;
+}
+
+#contenedordeco {
+ padding: 20px; 
+height: auto;
+flex-direction: column;
+}
+
+}
